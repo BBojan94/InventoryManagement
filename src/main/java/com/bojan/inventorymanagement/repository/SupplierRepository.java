@@ -1,4 +1,7 @@
 package com.bojan.inventorymanagement.repository;
 
-public interface SupplierRepository {
+import com.bojan.inventorymanagement.model.Supplier;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SupplierRepository extends JpaRepository<Supplier, Long> {
 }
