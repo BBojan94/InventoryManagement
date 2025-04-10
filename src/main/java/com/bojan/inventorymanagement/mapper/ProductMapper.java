@@ -5,8 +5,20 @@ import com.bojan.inventorymanagement.model.Category;
 import com.bojan.inventorymanagement.model.Product;
 import com.bojan.inventorymanagement.model.Supplier;
 
+/**
+ * Mapper class to convert between Product entity and ProductDTO.
+ * Used to translate data between the database layer (entities) and API layer (DTOs).
+ */
 public class ProductMapper {
 
+    /**
+     * Converts a ProductDTO to a Product entity.
+     *
+     * @param dto the ProductDTO to convert
+     * @param category the category to associate with the product
+     * @param supplier the supplier to associate with the product
+     * @return a Product entity representing the data in the DTO
+     */
     public static Product toEntity(ProductDTO dto, Category category, Supplier supplier) {
         return Product.builder()
                 .name(dto.getName())
@@ -21,6 +33,12 @@ public class ProductMapper {
                 .build();
     }
 
+    /**
+     * Converts a Product entity to a ProductDTO.
+     *
+     * @param product the Product entity to convert
+     * @return a ProductDTO that contains the product data in a format suitable for the API layer
+     */
     public static ProductDTO toDTO(Product product) {
         return ProductDTO.builder()
                 .name(product.getName())
