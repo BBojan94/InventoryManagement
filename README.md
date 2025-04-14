@@ -211,3 +211,25 @@ INSERT INTO product (name, description, price, quantity, category_id, supplier_i
 ('Baby Stroller', 'Lightweight, foldable baby stroller with adjustable seating', 199.99, 30, 19, 19),
 ('Running Shoes', 'Comfortable running shoes with breathable mesh', 59.99, 100, 20, 20);
 ```
+
+Then update your application.properties file:
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/inventory_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update
+
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.check-template-location=true
+```
+
+---
+
+## 🙋‍♂️ Author
+Bojan
+
+GitHub: your-username
+
+Email: your.email@example.com
