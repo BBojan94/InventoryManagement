@@ -232,6 +232,6 @@ spring.thymeleaf.check-template-location=true
 ## 🙋‍♂️ Author
 Bojan
 
-GitHub: your-username
+GitHub: [BBojan94](https://github.com/BBojan94)
 
-Email: your.email@example.com
+Email: bbojan1994@gmail.com
