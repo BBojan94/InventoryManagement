@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 @Builder
 public class ProductDTO {
 
-    private Long id;
+    private Long id;    // Unique identifier for the product
 
     @NotBlank
     private String name;
@@ -29,11 +29,11 @@ public class ProductDTO {
     @Min(0)
     private int quantity;
 
-    private String sku;
+    private String sku; // Stock Keeping Unit — unique product code
 
-    private String unit;
+    private String unit;    // Unit of measure (e.g., "pcs", "kg")
 
-    private boolean active;
+    private boolean active; // Indicates if the product is active in inventory
 
     @NotNull
     private Long categoryId;
