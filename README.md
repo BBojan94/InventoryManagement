@@ -1,6 +1,6 @@
 # 📦 Inventory Management System
 
-A web-based Inventory Management System built with **Spring Boot**, **Spring MVC**, **Spring Data JPA**, **Thymeleaf**, and **PostgreSQL**. It allows users to manage categories and items within an inventory — including creating, updating, and deleting records.
+A web-based Inventory Management System built with **Spring Boot**, **Spring MVC**, **Spring Data JPA**, **Thymeleaf**, and **PostgreSQL**. It allows users to manage products within an inventory — including creating, updating, and deleting records.
 
 ---
 
