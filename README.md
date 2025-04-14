@@ -92,6 +92,10 @@ src/
 Before running the app, ensure you have a PostgreSQL database created.
 
 ```sql
+-- ===============================
+-- Create Database
+-- ===============================
+CREATE DATABASE inventory_db;
 -- Create Category Table
 -- ===============================
 CREATE TABLE category (
