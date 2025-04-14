@@ -21,6 +21,7 @@ public class ProductMapper {
      */
     public static Product toEntity(ProductDTO dto, Category category, Supplier supplier) {
         return Product.builder()
+                .id(dto.getId())
                 .name(dto.getName())
                 .description(dto.getDescription())
                 .price(dto.getPrice())
@@ -41,6 +42,7 @@ public class ProductMapper {
      */
     public static ProductDTO toDTO(Product product) {
         return ProductDTO.builder()
+                .id(product.getId())
                 .name(product.getName())
                 .description(product.getDescription())
                 .price(product.getPrice())

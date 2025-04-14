@@ -51,11 +51,12 @@ public class ProductFrontendController {
         // Convert DTO to entity and save
         Category category = categoryService.getCategoryById(productDTO.getCategoryId())
                 .orElseThrow(() -> new ResourceNotFoundException("Category not found"));
-
         Supplier supplier = supplierService.getSupplierById(productDTO.getSupplierId())
                 .orElseThrow(() -> new ResourceNotFoundException("Supplier not found"));
-        Product product = productService.saveProduct(ProductMapper.toEntity(productDTO, category, supplier));
-        return "redirect:/products";  // Redirect to the product list
+        // Save the product entity
+        productService.saveProduct(ProductMapper.toEntity(productDTO, category, supplier));
+        // Redirect to the list view
+        return "redirect:/products";
     }
 
     // Show product details

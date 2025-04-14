@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Edit Product</title>
@@ -7,25 +7,25 @@
 <body>
 <h1>Edit Product</h1>
 <form th:action="@{/products/edit/{id}(id=${product.id})}" th:object="${product}" method="post">
-  <label>Name:</label>
-  <input type="text" th:field="*{name}" required><br>
+  <label for="name">Name:</label>
+  <input type="text" th:field="*{name}" id="name" required><br>
 
-  <label>Description:</label>
-  <input type="text" th:field="*{description}" required><br>
+  <label for="description">Description:</label>
+  <input type="text" th:field="*{description}" id="description" required><br>
 
-  <label>Price:</label>
-  <input type="number" th:field="*{price}" required><br>
+  <label for="price">Price:</label>
+  <input type="number" th:field="*{price}" id="price" required><br>
 
-  <label>Quantity:</label>
-  <input type="number" th:field="*{quantity}" required><br>
+  <label for="quantity">Quantity:</label>
+  <input type="number" th:field="*{quantity}" id="quantity" required><br>
 
-  <label>Category:</label>
-  <select th:field="*{categoryId}">
+  <label for="categoryId">Category:</label>
+  <select th:field="*{categoryId}" id="categoryId">
     <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}"></option>
   </select><br>
 
-  <label>Supplier:</label>
-  <select th:field="*{supplierId}">
+  <label for="supplierId">Supplier:</label>
+  <select th:field="*{supplierId}" id="supplierId">
     <option th:each="supplier : ${suppliers}" th:value="${supplier.id}" th:text="${supplier.name}"></option>
   </select><br>
 
