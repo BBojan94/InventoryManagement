@@ -92,4 +92,42 @@ src/
 Before running the app, ensure you have a PostgreSQL database created.
 
 ```sql
-CREATE DATABASE inventory_db;
+-- Create Category Table
+-- ===============================
+CREATE TABLE category (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+-- ===============================
+-- Create Supplier Table
+-- ===============================
+CREATE TABLE supplier (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    contact_name VARCHAR(100),
+    contact_email VARCHAR(100),
+    contact_phone VARCHAR(20)
+);
+
+-- ===============================
+-- Create Product Table
+-- ===============================
+CREATE TABLE product (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL,
+    quantity INT NOT NULL,
+    category_id INT,
+    supplier_id INT,
+    CONSTRAINT fk_category
+        FOREIGN KEY (category_id)
+        REFERENCES category(id)
+        ON DELETE SET NULL,
+    CONSTRAINT fk_supplier
+        FOREIGN KEY (supplier_id)
+        REFERENCES supplier(id)
+        ON DELETE SET NULL
+);
