@@ -217,7 +217,7 @@ INSERT INTO product (name, description, price, quantity, category_id, supplier_i
 ```
 
 Then update your application.properties file:
-```properties
+```java
 spring.datasource.url=jdbc:postgresql://localhost:5432/inventory_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
