@@ -6,7 +6,7 @@ A web-based Inventory Management System built with **Spring Boot**, **Spring MVC
 
 ## 🚀 Features
 
-- ✅ Add, edit, view, and delete **items**
+- ✅ Add, edit, view, and delete **products**
 - ✅ Form validation using `javax.validation`
 - ✅ Responsive web UI using **Thymeleaf**
 - ✅ Uses **H2 in-memory database** for quick testing
