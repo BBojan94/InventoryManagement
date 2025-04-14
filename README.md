@@ -32,17 +32,46 @@ A web-based Inventory Management System built with **Spring Boot**, **Spring MVC
 ```bash
 src/
 ├── main/
-│   ├── java/com/example/inventory
+│   ├── java/com/bojan/inventorymanagement
 │   │   ├── controller
+│   │   │   └── CategoryController.java
+│   │   │   └── ProductController.java
+│   │   │   └── ProductFrontEndController.java
+│   │   │   └── SupplierController.java
 │   │   ├── dto
+│   │   │   └── CategoryDTO.java
+│   │   │   └── ProductDTO.java
+│   │   │   └── SupplierDTO.java
+│   │   ├── exception
+│   │   │   └── GlobalExceptionHandler.java
+│   │   │   └── ResourceNotFoundException.java
+│   │   ├── mapper
+│   │   │   └── ProductMapper.java
 │   │   ├── model
+│   │   │   └── Category.java
+│   │   │   └── Product.java
+│   │   │   └── Supplier.java
 │   │   ├── repository
+│   │   │   └── CategoryRepository.java
+│   │   │   └── ProductRepository.java
+│   │   │   └── SupplierRepository.java
 │   │   ├── service
-│   │   └── InventoryApplication.java
+│   │   │   ├── impl
+│   │   │   │   └── CategoryServiceImpl.java
+│   │   │   │   └── ProductServiceImpl.java
+│   │   │   │   └── SupplierServiceImpl.java
+│   │   │   └── CategoryService.java
+│   │   │   └── ProductService.java
+│   │   │   └── SupplierService.java
+│   │   └── InventoryManagementApplication.java
 │   └── resources/
 │       ├── templates/
 │       │   └── category/
-│       │   └── item/
+│       │   └── product/
+│       │   │   └── create.html
+│       │   │   └── edit.html
+│       │   │   └── list.html
+│       │   └── supplier/
 │       ├── static/
 │       └── application.properties
 └── test/
