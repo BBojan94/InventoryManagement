@@ -242,7 +242,7 @@ git clone https://github.com/BBojan94/InventoryManagement.git
 Navigate into the project folder:
 
 ```
-cd inventory-management
+cd InventoryManagement
 ```
 
 Run the project:
