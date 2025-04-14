@@ -77,6 +77,8 @@ src/
 └── test/
 ```
 
+---
+
 ## 🔧 Getting Started
 
 ### Prerequisites
