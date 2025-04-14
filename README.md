@@ -231,6 +231,47 @@ spring.thymeleaf.check-template-location=true
 
 ---
 
+## 🚀 Run the Project
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/inventory-management.git
+```
+
+Navigate into the project folder:
+
+```
+cd inventory-management
+```
+
+Run the project
+
+```
+./mvnw spring-boot:run
+```
+
+Then open your browser and navigate to:
+
+```bash
+http://localhost:8080/products
+```
+
+Other endpoints:
+
+```bash
+http://localhost:8080/api/product
+```
+
+```bash
+http://localhost:8080/api/category
+```
+
+```bash
+http://localhost:8080/api/supplier
+```
+
+
 ## 🙋‍♂️ Author
 
 GitHub: [BBojan94](https://github.com/BBojan94)
