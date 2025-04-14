@@ -271,6 +271,7 @@ http://localhost:8080/api/category
 http://localhost:8080/api/supplier
 ```
 
+---
 
 ## 🙋‍♂️ Author
 
