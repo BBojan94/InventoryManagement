@@ -32,7 +32,7 @@ A web-based Inventory Management System built with **Spring Boot**, **Spring MVC
 ```bash
 src/
 ├── main/
-│   ├── java/com/bojan/inventorymanagement
+│   ├── java/com/bojan/inventorymanagement/
 │   │   ├── controller
 │   │   │   └── CategoryController.java
 │   │   │   └── ProductController.java
