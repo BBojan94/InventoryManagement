@@ -245,7 +245,7 @@ Navigate into the project folder:
 cd inventory-management
 ```
 
-Run the project
+Run the project:
 
 ```
 ./mvnw spring-boot:run
