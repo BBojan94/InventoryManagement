@@ -236,7 +236,7 @@ spring.thymeleaf.check-template-location=true
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/inventory-management.git
+git clone https://github.com/BBojan94/InventoryManagement.git
 ```
 
 Navigate into the project folder:
