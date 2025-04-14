@@ -1,6 +1,6 @@
 # 📦 Inventory Management System
 
-A web-based Inventory Management System built with **Spring Boot**, **Spring MVC**, **Spring Data JPA**, **Thymeleaf**, and **H2 Database**. It allows users to manage categories and items within an inventory — including creating, updating, and deleting records.
+A web-based Inventory Management System built with **Spring Boot**, **Spring MVC**, **Spring Data JPA**, **Thymeleaf**, and **PostgreSQL**. It allows users to manage categories and items within an inventory — including creating, updating, and deleting records.
 
 ---
 
@@ -9,7 +9,7 @@ A web-based Inventory Management System built with **Spring Boot**, **Spring MVC
 - ✅ Add, edit, view, and delete **products**
 - ✅ Form validation using `javax.validation`
 - ✅ Responsive web UI using **Thymeleaf**
-- ✅ Uses **H2 in-memory database** for quick testing
+- ✅ Uses **PostgreSQL** for persistent database storage
 - ✅ Clean MVC architecture
 - ✅ DTO and Mapper layer to separate entity and UI logic
 
@@ -21,7 +21,7 @@ A web-based Inventory Management System built with **Spring Boot**, **Spring MVC
 - Spring Boot 3.x
 - Spring Web (MVC)
 - Spring Data JPA
-- H2 Database
+- PostgreSQL
 - Thymeleaf
 - Lombok
 
@@ -75,4 +75,21 @@ src/
 │       ├── static/
 │       └── application.properties
 └── test/
+```
 
+## 🔧 Getting Started
+
+### Prerequisites
+
+- Java 17
+- Maven
+- PostgreSQL (Installed & Running)
+
+---
+
+## 🐘 PostgreSQL Setup
+
+Before running the app, ensure you have a PostgreSQL database created.
+
+```sql
+CREATE DATABASE inventory_db;
