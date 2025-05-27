@@ -116,7 +116,8 @@ CREATE TABLE supplier (
     name VARCHAR(100) NOT NULL,
     contact_name VARCHAR(100),
     contact_email VARCHAR(100),
-    contact_phone VARCHAR(20)
+    contact_phone VARCHAR(20),
+    address VARCHAR(100)
 );
 
 -- ===============================
@@ -168,27 +169,27 @@ INSERT INTO category (name, description) VALUES
 -- ===============================
 -- Supplier Values for Testing
 -- ===============================
-INSERT INTO supplier (name, contact_name, contact_email, contact_phone) VALUES
-('Tech Warehouse', 'Alice Smith', 'alice@tech.com', '123-456-7890'),
-('FurniCo', 'Bob Johnson', 'bob@furnico.com', '098-765-4321'),
-('Fashionista Suppliers', 'Alice Johnson', 'alice@fashionistasuppliers.com', '+1-800-345-6789'),
-('Fitness Gear Co.', 'Bob Brown', 'bob@fitnessgear.com', '+1-800-456-7890'),
-('Kitchen Essentials LLC', 'Carol White', 'carol@kitchenessentials.com', '+1-800-567-8901'),
-('Book World', 'David Black', 'david@bookworld.com', '+1-800-678-9012'),
-('Toy Kingdom', 'Eva Green', 'eva@toykingdom.com', '+1-800-789-0123'),
-('Green Grocer', 'Frank Adams', 'frank@greengrocer.com', '+1-800-890-1234'),
-('Stationery & Paper Goods', 'Harry Scott', 'harry@stationeryandpaper.com', '+1-800-012-3456'),
-('Auto Parts Hub', 'Jack Harris', 'jack@autopartshub.com', '+1-800-234-5678'),
-('Gourmet Kitchenware', 'Kathy Evans', 'kathy@gourmetkitchenware.com', '+1-800-345-6789'),
-('Garden Supply Co.', 'Louis Taylor', 'louis@gardensupply.com', '+1-800-456-7890'),
-('Handy Tools Inc.', 'Megan Miller', 'megan@handytools.com', '+1-800-567-8901'),
-('Pet Care World', 'Nathan Moore', 'nathan@petcareworld.com', '+1-800-678-9012'),
-('Beauty Pro Distributors', 'Grace Lee', 'grace@beautypro.com', '+1-800-901-2345'),
-('Office Equipment Supplies', 'Olivia Davis', 'olivia@officesupplies.com', '+1-800-789-0123'),
-('Luxury Jewelry Suppliers', 'Isabel King', 'isabel@luxuryjewelry.com', '+1-800-123-4567'),
-('Health Products Plus', 'Paul Wilson', 'paul@healthproducts.com', '+1-800-890-1234'),
-('Baby Care Essentials', 'Quincy Clark', 'quincy@babycareessentials.com', '+1-800-901-2345'),
-('Shoe Emporium', 'Rachel Harris', 'rachel@shoeemporium.com', '+1-800-012-3456');
+INSERT INTO supplier (name, contact_name, contact_email, contact_phone, address) VALUES
+('Tech Warehouse', 'Alice Smith', 'alice@tech.com', '123-456-7890', '123 Oak Street'),
+('FurniCo', 'Bob Johnson', 'bob@furnico.com', '098-765-4321', '456 Pine Avenue'),
+('Fashionista Suppliers', 'Alice Johnson', 'alice@fashionistasuppliers.com', '+1-800-345-6789', '789 Maple Drive'),
+('Fitness Gear Co.', 'Bob Brown', 'bob@fitnessgear.com', '+1-800-456-7890', '101 Elm Street'),
+('Kitchen Essentials LLC', 'Carol White', 'carol@kitchenessentials.com', '+1-800-567-8901', '202 Birch Road'),
+('Book World', 'David Black', 'david@bookworld.com', '+1-800-678-9012', '303 Cedar Lane'),
+('Toy Kingdom', 'Eva Green', 'eva@toykingdom.com', '+1-800-789-0123', '404 Willow Court'),
+('Green Grocer', 'Frank Adams', 'frank@greengrocer.com', '+1-800-890-1234', '505 Aspen Circle'),
+('Stationery & Paper Goods', 'Harry Scott', 'harry@stationeryandpaper.com', '+1-800-012-3456', '606 Chestnut Blvd'),
+('Auto Parts Hub', 'Jack Harris', 'jack@autopartshub.com', '+1-800-234-5678', '707 Poplar Street'),
+('Gourmet Kitchenware', 'Kathy Evans', 'kathy@gourmetkitchenware.com', '+1-800-345-6789', '808 Walnut Way'),
+('Garden Supply Co.', 'Louis Taylor', 'louis@gardensupply.com', '+1-800-456-7890', '909 Sycamore Ave'),
+('Handy Tools Inc.', 'Megan Miller', 'megan@handytools.com', '+1-800-567-8901', '111 Hickory Road'),
+('Pet Care World', 'Nathan Moore', 'nathan@petcareworld.com', '+1-800-678-9012', '222 Redwood Street'),
+('Beauty Pro Distributors', 'Grace Lee', 'grace@beautypro.com', '+1-800-901-2345', '333 Spruce Lane'),
+('Office Equipment Supplies', 'Olivia Davis', 'olivia@officesupplies.com', '+1-800-789-0123', '444 Dogwood Drive'),
+('Luxury Jewelry Suppliers', 'Isabel King', 'isabel@luxuryjewelry.com', '+1-800-123-4567', '555 Magnolia Blvd'),
+('Health Products Plus', 'Paul Wilson', 'paul@healthproducts.com', '+1-800-890-1234', '666 Juniper Court'),
+('Baby Care Essentials', 'Quincy Clark', 'quincy@babycareessentials.com', '+1-800-901-2345', '777 Palm Avenue'),
+('Shoe Emporium', 'Rachel Harris', 'rachel@shoeemporium.com', '+1-800-012-3456', '888 Fir Street');
 
 -- ===============================
 -- Product Values for Testing
