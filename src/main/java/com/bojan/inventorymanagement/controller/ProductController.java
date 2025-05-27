@@ -10,7 +10,7 @@ import com.bojan.inventorymanagement.service.CategoryService;
 import com.bojan.inventorymanagement.service.ProductService;
 import com.bojan.inventorymanagement.service.SupplierService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,21 +23,12 @@ import java.util.stream.Collectors;
  */
 @RestController
 @RequestMapping("/api/product")
+@RequiredArgsConstructor
 public class ProductController {
 
     private final ProductService productService;
     private final CategoryService categoryService;
     private final SupplierService supplierService;
-
-    /**
-     * Constructor-based injection for service dependencies.
-     */
-    @Autowired
-    public ProductController(ProductService productService, CategoryService categoryService, SupplierService supplierService) {
-        this.productService = productService;
-        this.categoryService = categoryService;
-        this.supplierService = supplierService;
-    }
 
     /**
      * Endpoint to create a new product.

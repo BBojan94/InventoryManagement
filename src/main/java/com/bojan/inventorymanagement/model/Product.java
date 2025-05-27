@@ -7,8 +7,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "product")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -18,15 +17,19 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false)
     private String description;
 
+    @Column(nullable = false)
     private BigDecimal price;
 
+    @Column(nullable = false)
     private int quantity;
 
-    private String sku;     // Stock Keeping Unit
+//    private String sku;     // Stock Keeping Unit
 
     private String unit;    // kg, liters etc
 

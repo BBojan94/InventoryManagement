@@ -3,7 +3,7 @@ package com.bojan.inventorymanagement.service.impl;
 import com.bojan.inventorymanagement.model.Product;
 import com.bojan.inventorymanagement.repository.ProductRepository;
 import com.bojan.inventorymanagement.service.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,19 +14,10 @@ import java.util.Optional;
  * Handles business logic and data access operations for Product entities.
  */
 @Service
+@RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
-
-    /**
-     * Constructor-based injection of the ProductRepository.
-     *
-     * @param productRepository Spring-managed repository for Product entities
-     */
-    @Autowired
-    public ProductServiceImpl(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
 
     /**
      * Saves a new product or updates an existing one.
@@ -86,7 +77,7 @@ public class ProductServiceImpl implements ProductService {
             product.setDescription(updatedProduct.getDescription());
             product.setPrice(updatedProduct.getPrice());
             product.setQuantity(updatedProduct.getQuantity());
-            product.setSku(updatedProduct.getSku());
+//            product.setSku(updatedProduct.getSku());
             product.setUnit(updatedProduct.getUnit());
 //            product.setActive(updatedProduct.isActive());
             product.setCategory(updatedProduct.getCategory());

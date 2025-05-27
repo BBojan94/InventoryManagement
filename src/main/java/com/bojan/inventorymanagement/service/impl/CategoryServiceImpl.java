@@ -3,21 +3,17 @@ package com.bojan.inventorymanagement.service.impl;
 import com.bojan.inventorymanagement.model.Category;
 import com.bojan.inventorymanagement.repository.CategoryRepository;
 import com.bojan.inventorymanagement.service.CategoryService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class CategoryServiceImpl implements CategoryService {
 
     private final CategoryRepository categoryRepository;
-
-    @Autowired
-    public CategoryServiceImpl(CategoryRepository categoryRepository) {
-        this.categoryRepository = categoryRepository;
-    }
 
     @Override
     public Category saveCategory(Category category) {

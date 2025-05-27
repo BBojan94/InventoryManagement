@@ -5,7 +5,7 @@ import com.bojan.inventorymanagement.exception.ResourceNotFoundException;
 import com.bojan.inventorymanagement.model.Supplier;
 import com.bojan.inventorymanagement.service.SupplierService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,14 +14,10 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/supplier")
+@RequiredArgsConstructor
 public class SupplierController {
 
     private final SupplierService supplierService;
-
-    @Autowired
-    public SupplierController(SupplierService supplierService) {
-        this.supplierService = supplierService;
-    }
 
     @PostMapping
     public ResponseEntity<SupplierDTO> createSupplier(@Valid @RequestBody SupplierDTO dto) {

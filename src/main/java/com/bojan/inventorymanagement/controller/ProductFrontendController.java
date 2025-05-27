@@ -9,25 +9,19 @@ import com.bojan.inventorymanagement.model.Supplier;
 import com.bojan.inventorymanagement.service.CategoryService;
 import com.bojan.inventorymanagement.service.ProductService;
 import com.bojan.inventorymanagement.service.SupplierService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/products")
+@RequiredArgsConstructor
 public class ProductFrontendController {
 
     private final ProductService productService;
     private final CategoryService categoryService;
     private final SupplierService supplierService;
-
-    @Autowired
-    public ProductFrontendController(ProductService productService, CategoryService categoryService, SupplierService supplierService) {
-        this.productService = productService;
-        this.categoryService = categoryService;
-        this.supplierService = supplierService;
-    }
 
     // Display all products
     @GetMapping
