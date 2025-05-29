@@ -26,6 +26,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class ProductController {
 
+    // Injected services for handling business logic
     private final ProductService productService;
     private final CategoryService categoryService;
     private final SupplierService supplierService;

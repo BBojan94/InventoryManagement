@@ -17,6 +17,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService {
 
+    // Injected repository for handling business logic
     private final ProductRepository productRepository;
 
     /**

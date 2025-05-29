@@ -8,13 +8,17 @@ import lombok.*;
 
 import java.math.BigDecimal;
 
+/**
+ * Data Transfer Object for Product entity.
+ * Used to transfer product data between layers.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class ProductDTO {
 
-    private Long id;    // Unique identifier for the product
+    private Long id;
 
     @NotBlank
     private String name;
@@ -28,9 +32,9 @@ public class ProductDTO {
     @Min(0)
     private int quantity;
 
-    private String sku; // Stock Keeping Unit — unique product code
+    private String sku;     // Stock Keeping Unit — unique product code
 
-    private String unit;    // Unit of measure (e.g., "pcs", "kg")
+    private String unit;
 
     private boolean active; // Indicates if the product is active in inventory
 

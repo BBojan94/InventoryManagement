@@ -4,6 +4,10 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
+/**
+ * Data Transfer Object for Supplier entity.
+ * Used to transfer supplier data between layers.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
