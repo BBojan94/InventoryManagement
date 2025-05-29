@@ -46,7 +46,9 @@ src/
 │   │   │   └── GlobalExceptionHandler.java
 │   │   │   └── ResourceNotFoundException.java
 │   │   ├── mapper
+│   │   │   └── CategoryMapper.java
 │   │   │   └── ProductMapper.java
+│   │   │   └── SupplierMapper.java
 │   │   ├── model
 │   │   │   └── Category.java
 │   │   │   └── Product.java
